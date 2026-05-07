@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הדף לא נמצא | נוף המדבר</title>
+    <meta name="description" content="הדף שחיפשת לא נמצא. חזרה לאתר צימר נוף המדבר במעלה עמוס.">
+    <link rel="icon" type="image/jpeg" href="images/logo.jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3.0">
+    <style>
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            padding: 28px;
+            background:
+                linear-gradient(90deg, rgba(7, 63, 70, 0.92), rgba(7, 63, 70, 0.52)),
+                url("images/nof.jpeg") center/cover no-repeat;
+        }
+
+        .error-page {
+            width: min(680px, 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .error-page img {
+            width: 112px;
+            height: 112px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.82);
+            margin: 0 auto 22px;
+        }
+
+        .error-page p {
+            color: rgba(255, 255, 255, 0.84);
+            font-size: 20px;
+            margin: 0 0 28px;
+        }
+
+        .error-page .code {
+            color: var(--gold);
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+
+        .error-page h1 {
+            margin: 0 0 16px;
+            font-size: clamp(42px, 8vw, 76px);
+            line-height: 1;
+        }
+
+        .error-actions {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        @media (max-width: 620px) {
+            .error-actions {
+                display: grid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="error-page">
+        <img src="images/logo.jpeg" alt="לוגו נוף המדבר">
+        <div class="code">404</div>
+        <h1>הדף לא נמצא</h1>
+        <p>יכול להיות שהקישור השתנה או שהעמוד הוסר. אפשר לחזור לדף הבית או ליצור קשר לבדיקת זמינות.</p>
+        <div class="error-actions">
+            <a class="btn primary" href="/">חזרה לדף הבית</a>
+            <a class="btn secondary" href="/#contact">יצירת קשר</a>
+        </div>
+    </main>
+</body>
+</html>
